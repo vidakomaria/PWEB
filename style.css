@@ -1,0 +1,427 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.col_1 {
+    width: 8, 333%;
+    display: inline-block;
+}
+
+.col_2 {
+    width: 16, 666%;
+    display: inline-block;
+}
+
+.col_3 {
+    width: 25%;
+    display: inline-block;
+}
+
+.col_4 {
+    width: 33, 333%;
+    display: inline-block;
+}
+
+.col_5 {
+    width: 41, 666%;
+    display: inline-block;
+}
+
+.col_6 {
+    width: 50%;
+    display: inline-block;
+}
+
+.col_7 {
+    width: 58, 333%;
+    display: inline-block;
+}
+
+.col_8 {
+    width: 66, 666%;
+    display: inline-block;
+}
+
+.col_9 {
+    width: 75%;
+    display: inline-block;
+}
+
+.col_10 {
+    width: 83, 333%;
+    display: inline-block;
+}
+
+.col_11 {
+    width: 91, 666%;
+    display: inline-block;
+}
+
+.col_12 {
+    width: 100%;
+    display: inline-block;
+}
+
+.row {
+    display: table;
+    margin: auto;
+}
+
+#bg_akun {
+    background-image: url("gambar/bg_akun.png");
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.bg_home {
+    background-image: url("gambar/bg_home.png");
+    background-size: 100% 100%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.bg_tour {
+    background-image: url("gambar/bg_tour.png");
+    background-size: 100%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.bg_blog {
+    background-image: url("gambar/bg_blog.png");
+    background-size: 100%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.bg_galery {
+    background-image: url("gambar/bg_galery.png");
+    background-size: 100%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.logo_register {
+    width: 301px;
+    height: 129px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo_login {
+    width: 399px;
+    height: 170px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container_register {
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 100%;
+    padding: 8px;
+    margin: 10px;
+}
+
+.container_login {
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    height: 270px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.font {
+    font-family: boba Panda;
+    color: black;
+    font-size: 19px;
+}
+
+.input_register {
+    border-radius: 10px;
+    border-color: #707070;
+    height: 25px;
+    width: 275px;
+    padding-left: 15px;
+    font-family: boba panda;
+    font-size: 15px;
+    color: #7F7F7F;
+}
+
+.label_login {
+    border-radius: 12px;
+    border-color: #707070;
+    height: 29px;
+    width: 170px;
+    padding-left: 15px;
+    font-family: boba panda;
+    font-size: 16px;
+    color: #7F7F7F;
+}
+
+.center {
+    vertical-align: middle;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right {
+    vertical-align: middle;
+    text-align: right;
+    float: right;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo_username_pw {
+    width: 64px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.logo_menu {
+    width: 197px;
+    height: 84px;
+    float: left;
+    display: block;
+}
+
+.button_submit button {
+    border-radius: 13px;
+    border-color: #707070;
+    background-color: #F0B70E;
+    text-align: center;
+    width: 100px;
+}
+
+.button_submit a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-family: boba panda;
+    font-size: 25px;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+.navigasi {
+    background-color: #018BC7;
+    padding-top: 13px;
+}
+
+.navigasi a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    font-family: boba panda;
+    font-size: 25px;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+.navigasi a:hover {
+    background-color: #E9961B;
+}
+
+.navigasi a.active {
+    background-color: #E9961B;
+    color: white;
+}
+
+.side_navigation {
+    float: left;
+    width: 300px;
+    height: 100%;
+}
+
+.side_navigation button {
+    display: block;
+    background-color: inherit;
+    color: #6E6E6E;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    font-family: boba panda;
+    font-size: 25px;
+    padding: 30px;
+}
+
+.side_navigation button.active {
+    color: #F0B70E;
+}
+
+.side_navigation button:hover {
+    color: #E9961B;
+}
+
+.conten_akun {
+    display: none;
+    float: left;
+    background-color: white;
+    font-family: boba panda;
+    font-size: 20px;
+    color: #6E6E6E;
+    width: 100%;
+    height: 100%;
+}
+
+.conten_akun td {
+    padding: 20px;
+    padding-left: 40px;
+}
+
+.search input {
+    width: 1000px;
+    height: 40px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    vertical-align: middle;
+    font-family: boba panda;
+    font-size: 25px;
+    letter-spacing: 5px;
+    color: #6E6E6E;
+}
+
+.search button {
+    background-color: #F0B70E;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.home_conten {
+    color: white;
+    font-family: billion dreams;
+    text-align: center;
+}
+
+.option select {
+    width: 350px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #ECF2F4;
+    font-family: boba panda;
+    color: #76797A;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.tour img {
+    width: 300px;
+}
+
+.tour {
+    text-align: center;
+    font-family: boba panda;
+    font-size: 23px;
+    letter-spacing: 1px;
+    padding: 20px;
+}
+
+.tour a {
+    text-align: center;
+    font-family: boba panda;
+    font-size: 23px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: black;
+}
+
+.galery img {
+    width: 300px;
+}
+
+.galery {
+    text-align: center;
+    font-family: boba panda;
+    font-size: 23px;
+    letter-spacing: 1px;
+    padding: 20px;
+}
+
+.galery a {
+    text-align: center;
+    font-family: boba panda;
+    font-size: 23px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: black;
+}
+
+.lokasi,
+.lokasi a {
+    text-align: left;
+    font-family: boba panda;
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #4C4C4C;
+}
+
+.harga header {
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    font-family: boba panda;
+    font-size: 50px;
+}
+
+.info_harga {
+    text-align: center;
+    font-family: boba panda;
+    font-size: 40px;
+    letter-spacing: 0px;
+    color: #000000;
+    padding: 20px;
+}
+
+.info_harga p {
+    text-align: left;
+    font-family: boba panda;
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.cek_harga {
+    background-color: #03A0EF;
+    border-radius: 15px;
+    font-family: boba panda;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: white;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cek_harga input {
+    width: 150px;
+    background-color: white;
+    border-radius: 7px;
+    height: 30px;
+}
+
+.cek_harga td {
+    padding: 10px;
+}

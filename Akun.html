@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViewTour | Akun</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="row col_12" style="background-color: #018BC7;">
+        <table style="width: 100%;">
+            <tr>
+                <td><img src="gambar/logo.png" class="logo_menu"></td>
+                <td>
+                    <nav class="navigasi" style="float: right;">
+                        <a href="Home.html">Home</a>
+                        <a href="Tour.html">Tour</a>
+                        <a href="Info.html">Info</a>
+                        <a href="Blog.html">Blog</a>
+                        <a href="Galery.html">Galery Travel</a>
+                        <a href="Login.html" class="active"><img src="gambar/akun.png" style="width: 30px;" alt=""></a>
+                    </nav>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+
+<div class="row col_12">
+    <table style="width: 100%; height: 100%; background-color: #E9E9E9; position: fixed;">
+        <tr>
+            <td class="side_navigation">
+                <button class="navigation_link" onclick="openAkun(event, 'profile')" id="defaultOpen">Profile</button>
+                <button class="navigation_link" onclick="openAkun(event, 'security')">Security</button>
+            </td>
+
+            <td style="width: 100%;">
+                <table id="profile" class="conten_akun">
+                    <tr>
+                        <td>Username</td>
+                        <td style="color: black;">'username'</td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td style="color: black;">'name'</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td style="color: black;">'email'</td>
+                    </tr>
+                    <tr>
+                        <td>Birth Place</td>
+                        <td style="color: black;">'birth place'</td>
+                    </tr>
+                    <tr>
+                        <td>Birth Date</td>
+                        <td style="color: black;">'birth date'</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td style="color: black;">'address'</td>
+                    </tr>
+                    <tr>
+                        <td>Country</td>
+                        <td style="color: black;">'country'</td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td style="color: black;">'gender'</td>
+                    </tr>
+                </table>
+                <table id="security" class="conten_akun">
+                    <tr>
+                        <td>Username</td>
+                        <td><input class="label_login" type="text" id="username" name="username" value="Username"></td>
+                    </tr>
+                    <tr>
+                        <td>Old Password</td>
+                        <td><input class="label_login" type="password" id="password" name="password" value="password"></td>
+                    </tr>
+                    <tr>
+                        <td>Confirmed Password</td>
+                        <td><input class="label_login" type="password" id="new_password" name="new_password" value="password"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="submit" class="button_submit"><a href="">Submit</a></button></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<script>
+    function openAkun(evt, akun) {
+        var i, conten_akun, navigation_link;
+
+        conten_akun = document.getElementsByClassName("conten_akun");
+        for (i = 0; i < conten_akun.length; i++) {
+            conten_akun[i].style.display = "none";
+        }
+
+        navigation_link = document.getElementsByClassName("navigation_link");
+        for (i = 0; i < navigation_link.length; i++) {
+            navigation_link[i].className = navigation_link[i].className.replace(" active", "");
+        }
+
+        document.getElementById(akun).style.display = "block";
+        evt.currentTarget.className += " active";
+
+    }
+
+    document.getElementById("defaultOpen").click();
+</script>
+
+</html>
